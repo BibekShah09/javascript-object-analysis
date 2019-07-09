@@ -9,7 +9,7 @@ They are mostly prominent in arrays and used for different prototype method.
 ```
 
 
-###Output
+### Output
 
 ##### 01. SMI Elements
 <img src='output/01_packed_smi_elements.png' alt='smi_elements'/>

@@ -5,7 +5,7 @@ var test = {
     1: "bar",
 };
 
-%DebugPrint(test);objeobob
+%DebugPrint(test);
 
 test.c = 'i am late';
 test.d = 'i am late too';

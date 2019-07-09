@@ -13,7 +13,7 @@ print('check if p1 and p2 have same map:', %HaveSameMap(p1, p2));
 p2['0'] = 'Nepal';
 
 // addition of numbered attribute do not change hidden class.
-print('check if p1 and p2 have same map:', %HaveSameMap(p1, p2));
+print('updating numbered properties cause hidden class to alter:', !%HaveSameMap(p1, p2));
 
 // changes the hidden class
 p2['120'] = 3.04;
@@ -30,7 +30,7 @@ p2.g = 112;
 p2.h = 116;
 p2.i = 117;
 p2.j = 118;
-%DebugPrint(p2);
+// %DebugPrint(p2);
 
 // p1 and p2 now have different hidden class.
-print('check if p1 and p2 have same map:', %HaveSameMap(p1, p2));
+print('updating named properties cause hidden class to alter:', !%HaveSameMap(p1, p2));

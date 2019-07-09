@@ -8,4 +8,4 @@ array.__proto__ = { 1 : "B" }; // Define property 1 on the prototype.
 %DebugPrint(array);
 
 
-//d8 --allow-natives-syntax  03_elements/element.js
+//d8 --allow-natives-syntax element.js
