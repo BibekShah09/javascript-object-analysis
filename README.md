@@ -1,5 +1,5 @@
-#Object representation in JavaScript Engine
-Object representation in Google v8 engine.
+# Object representation in v8 JavaScript Engine
+
 
 ## Prerequisites
  [Git](https://git-scm.com/) <br />
@@ -11,5 +11,3 @@ Object representation in Google v8 engine.
  cd repo_name
  rm rf .git
  ```
-### Run
-Run the command specified in directory inside src folder
