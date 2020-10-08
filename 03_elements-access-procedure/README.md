@@ -1,40 +1,66 @@
 # Elements Access Procedure in JavaScript
-Let us consider a holey array: <br />
+Let us consider a holey array <br />
+```
 const holeyArray = [1, 2, 3, 4.56, 'x', null, null, null, null, null, 1];
+```
 
+## Holey array (if property doesn't exist)
 holeyArray[8] = ?
 
-### Holey Array
-#### Step 1: Bounds Check
+### Step 1: Bound check
 Check if specified index is within array bound.
-<br /> 8 >= 0 && 8 < holeyArray.length
+```
+8 >= 0 && 8 < holeyArray.length
+```
 
-#### Step 2: Check in object property,
+### Step 2: Check in object property
 Check if object has specified object property with hasOwnProperty method.
-<br /> hasOwnProperty(holeyArray, '8'):
+<br />
+```
+hasOwnProperty(holeyArray, '8'):
+```
 
-#### Step 3: Check in Prototype chain for array
+### Step 3: Check in prototype chain for Array
+```
 hasOwnProperty(Array, 8);
+```
 
-#### Step 4: Check in Prototype chain for object
+### Step 4: Check in prototype chain for Object
+```
 hasOwnProperty(Object, 8);
-<br /> Things get even worse if holeyArray is extended via inheritance.
+```
+<br />
+<b>
+Things get even worse if holeyArray is extended via inheritance.
+</b>
+
 <br /> Finally returns undefined.
 
-#### Holey Array (If property exists)
+## Holey Array (If property exists)
 holeyArray[1] = ? 
 
-#### Step 1: Bounds Check 
-1 >= 0 && 1 < array.length; 
+### Step 1: Bounds Check 
+```
+1 >= 0 && 1 < array.length;
+```
 
-#### Step 2: hasOwnProperty(array, 1); true.
-finally return its value.
+### Step 2: Check in object property
+Check if object has specified object property with hasOwnProperty method.
+<br />
+```
+hasOwnProperty(holeyArray, '1'):
+```
 
-<br /> This is very best case scenario for holey array.
- 
-### Packed Array
+<br /> Then, the value is returned.
+
+## Packed Array
 #### Step 1: Bounds Check and return result
 Check if specified index is within array bound.
+```
 <br /> 8 >= 0 && 8 < array.length 
+```
+
+<br /> Then, the value is returned.
+<br />
 
 <b>Operations in packed array can be much more optimized.</b>
