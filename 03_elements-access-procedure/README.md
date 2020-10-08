@@ -4,7 +4,7 @@ Let us consider a holey array <br />
 const holeyArray = [1, 2, 3, 4.56, 'x', null, null, null, null, null, 1];
 ```
 
-## Holey array (if property doesn't exist)
+## Access procedure in Holey Array (if property doesn't exist)
 holeyArray[8] = ?
 
 ### Step 1: Bound check
@@ -36,7 +36,7 @@ Things get even worse if holeyArray is extended via inheritance.
 
 <br /> Finally returns undefined.
 
-## Holey Array (If property exists)
+## Access procedure in Holey Array (if property exists)
 holeyArray[1] = ? 
 
 ### Step 1: Bounds Check 
@@ -53,7 +53,7 @@ hasOwnProperty(holeyArray, '1'):
 
 <br /> Then, the value is returned.
 
-## Packed Array
+## Access procedure in Packed Array
 #### Step 1: Bounds Check and return result
 Check if specified index is within array bound.
 ```
