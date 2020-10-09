@@ -8,13 +8,13 @@ delete holey_array[1];
 // %DebugPrint(holey_array);
 
 console.time("packedArray");
-for (var count = 0; count < 10000000000; count++) {
+for (var count = 0; count < 100000000000; count++) {
     var val = packed_array[1];
 }
 console.timeEnd("packedArray");
 
 console.time("holeyArray");
-for (var count = 0; count < 10000000000; count++) {
+for (var count = 0; count < 100000000000; count++) {
     var val = holey_array[1];
 }
 
