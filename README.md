@@ -7,7 +7,8 @@ JavaScript Objects are the collection of properties, mapping between keys and va
 Property access mechanism in strongly typed language
 is different from dynamically typed language. In V8, the object has a hidden class associated with it which works similarly to fixed object layout in Java, except they are created at run time and updated dynamically as object changes. 
 <br />
-For more details refer [Exploration of JavaScript Object for Performance Optimization](https://medium.com/swlh/exploration-of-javascript-object-for-performance-optimization-70b20246ab9e).
+<br />
+For more details refer [The Secrets of JavaScript Object for Performance Optimization](https://medium.com/swlh/exploration-of-javascript-object-for-performance-optimization-70b20246ab9e).
 
 
 ## Prerequisites
