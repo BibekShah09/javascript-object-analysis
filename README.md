@@ -1,4 +1,4 @@
-# Object Analysis in Javascript
+# JavaScript Optimization: Exploring V8 Engine and Hidden Classes for Improved Performance
 In JavaScript, Objects are mutable (alterable) data types. Created by literals and compared by reference,
 JavaScript Objects are the collection of properties, mapping between keys and values.
 
